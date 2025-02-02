@@ -1,14 +1,20 @@
 #include <stdio.h>
 
 int main() {
-	int notas[10];
+	char palavrasecreta[20];
 
-	notas[0] = 10;
-	notas[2] = 5;
-	notas[8] = 9;
-	notas[9] = 4;
+	palavrasecreta[0] = 'M';
+	palavrasecreta[1] = 'E';
+	palavrasecreta[2] = 'L';
+	palavrasecreta[3] = 'A';
+	palavrasecreta[4] = 'N';
+	palavrasecreta[5] = 'C';
+	palavrasecreta[6] = 'I';
+	palavrasecreta[7] = 'A';
 
-	printf("%d %d %d", notas[0], notas[8], notas[9]);
+	printf("%c%c%c%c%c%c%c%c", palavrasecreta[0], palavrasecreta[1],
+		palavrasecreta[2],palavrasecreta[3],palavrasecreta[4],
+		palavrasecreta[5],palavrasecreta[6],palavrasecreta[7]);
 
 	return 0;
 }
