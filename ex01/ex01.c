@@ -1,20 +1,13 @@
 #include <stdio.h>
 
 int main() {
-	char palavrasecreta[20];
+    char palavrasecreta[20];
 
-	palavrasecreta[0] = 'M';
-	palavrasecreta[1] = 'E';
-	palavrasecreta[2] = 'L';
-	palavrasecreta[3] = 'A';
-	palavrasecreta[4] = 'N';
-	palavrasecreta[5] = 'C';
-	palavrasecreta[6] = 'I';
-	palavrasecreta[7] = 'A';
+    sprintf_s(palavrasecreta, sizeof(palavrasecreta), "MELANCIA E MAMAO");  // Armazena a string completa
+    //sizeof(palavrasecreta) retorna 20, porque palavrasecreta é um array de 20 caracteres.
+    palavrasecreta[8] = '\0';  // Corta a string no índice 8
 
-	printf("%c%c%c%c%c%c%c%c", palavrasecreta[0], palavrasecreta[1],
-		palavrasecreta[2],palavrasecreta[3],palavrasecreta[4],
-		palavrasecreta[5],palavrasecreta[6],palavrasecreta[7]);
+    printf("%s", palavrasecreta);  // Exibe apenas "MELANCIA"
 
-	return 0;
+    return 0;
 }
